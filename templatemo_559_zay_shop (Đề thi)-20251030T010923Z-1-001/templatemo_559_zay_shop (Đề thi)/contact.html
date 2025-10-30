@@ -153,21 +153,42 @@ https://templatemo.com/tm-559-zay-shop
       <input type="text" id="name" class="form-control" placeholder="Nhập họ và tên">
     </div>
 
-    <div class="col-md-6 mb-3">
-      <label for="gender" class="form-label">Giới tính</label>
-      <input type="" id="gender" class="form-control" placeholder="Nam">
-      <input type="" id="gender" class="form-control" placeholder="Nu">
-    </div>
+    <div class="mb-3">
+                <label class="form-label">Giới tính</label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="genderMale" value="Nam" checked>
+                            <label class="form-check-label" for="genderMale">Nam</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="Nữ">
+                            <label class="form-check-label" for="genderFemale">Nữ</label>
+                        </div>
+                    </div>
+             </div>
 
     <div class="col-md-6 mb-3">
       <label for="email" class="form-label">Email</label>
       <input type="email" id="email" class="form-control" placeholder="Nhập email">
     </div>
 
-    <div class="col-12 mb-3">
-      <label for="subject" class="form-label">Chủ đề</label>
-      <input type="text" id="subject" class="form-control" placeholder="Nhập chủ đề liên hệ">
+    <div class="mb-3">
+                    <label for="inputTopic" class="form-label">Chủ đề liên hệ</label>
+                    <select class="form-select" id="inputTopic" name="topic">
+                        <option value="">- Chọn chủ đề -</option>
+                        <option value="Hỗ trợ sản phẩm">Hỗ trợ sản phẩm</option>
+                        <option value="Đặt hàng">Đặt hàng</option>
+                        <option value="Hợp tác kinh doanh">Hợp tác kinh doanh</option>
+                        <option value="Khác">Khác</option>
+                    </select>
+                </div>
+
+    <div class="col-md-6 mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" id="email" class="form-control" placeholder="Nhập email">
     </div>
+
+    
 
     <div class="col-12 mb-3">
       <label for="message" class="form-label">Nội dung</label>
@@ -331,5 +352,6 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     <script src="assets/js/custom.js"></script>
     <!-- End Script -->
 </body>
+
 
 </html>

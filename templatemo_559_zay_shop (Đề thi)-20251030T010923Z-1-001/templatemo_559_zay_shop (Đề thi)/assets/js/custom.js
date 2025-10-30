@@ -1,1 +1,5 @@
-//Làm câu 3 tại đây
+$(document).ready(function() {
+    $('#toggleCategoriesBtn').click(function() {
+        $('#categories-row').fadeToggle(400);
+    });
+});
